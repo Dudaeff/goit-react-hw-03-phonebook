@@ -14,7 +14,7 @@ export class App extends Component  {
 
   componentDidMount() {
     this.setState({
-      contacts: getFromLocal('contacts')
+      contacts: getFromLocal('contacts') ? getFromLocal('contacts') : [],
     })
   }
 
